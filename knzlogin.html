@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  body {
+    margin: 0pc;
+    background-image: url('ALBUMZ2023.png');
+    background-size: cover;
+  }
+
+  .vtdropdown:hover .vtdropbtn {
+    background-color: blue;
+    color: black;
+    font-weight: bold;
+  }
+
+  .vtdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(42, 42, 224);
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .vtdropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+  }
+
+  .vtdropdown-content a:hover {
+    background-color: black;
+    color: rgb(42, 42, 224);
+  }
+
+  .vtdropdown:hover .vtdropdown-content {
+    display: block;
+    font-weight: bold;
+  }
+  
+label {
+        color: blue;
+        font-size: large;
+        font-weight: bold;
+        align-self: center;
+        background-color: black;
+        border: 1px solid blue;
+        padding: 2px;
+      }
+
+    .loginbody {
+        margin-left: 21%;
+        padding: 3px;
+        border: 1px solid rgba(1, 0, 5, 0.8);
+        width: 50%;
+        height: 50%;
+        background-color: rgba(6, 4, 32, 0.8);
+        padding:10% 0% 10% 11%;
+      }
+    
+      .verticalheader {
+        list-style-type: none;
+        background-color: rgb(0, 0, 83);
+        margin: 0pc;
+        padding: 0pc;
+        width: 0.05%;
+        height: 100%;
+        float: left;
+        position: fixed;
+        transition: width 1s ease-in-out;
+        border-right: 10px solid red;
+        overflow: hidden;
+        z-index:2;
+      }
+    
+      .verticalheader img{
+        text-align: center;
+        margin-left: 5.5pc;
+        width: 5pc;
+        height: 4pc;
+      }
+    
+      .verticalheader:hover {
+        width: 19%;
+        background-color: rgb(0, 0, 83);
+        border-right: 10px solid blue;
+      }
+    
+      .verticalheader a {
+        font-weight: bold;
+        display: block;
+        color: #000;
+        padding: 1.5pc;
+        text-decoration: none;
+        text-align: center;
+      }
+    
+      .verticalheader li > a:hover {
+        font-weight: bold;
+        background-color: blue;
+        color: black;
+        border: 1px solid blue;
+      }
+    
+      label {
+        color: blue;
+        font-size: large;
+        font-weight: bold;
+        align-self: center;
+      }
+    
+      .loginbody input {
+        position: relative;
+        height: 2pc;
+        width: 15pc;
+        border: 2px groove blue;
+        margin-right: 0pc;
+        padding-left: 1pc;
+        border-radius: 6px;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    
+      .loginbody input:hover {
+        background-color: lightskyblue;
+      }
+    
+      .loginbody input:focus {
+        background-color: rgb(124, 164, 245);
+        border: 1px solid darkblue;
+      }
+    
+      .submitbutton{
+        margin-left:10%;
+        background-color: black;
+        color: blue;
+        width: 6pc;
+        height: 1.7pc;
+        border: 3px groove blue;
+      }
+
+@media screen and (max-width: 750px) {
+
+body {
+background-color: white;
+padding: 1px;
+}
+
+.verticalheader img{
+display:none;
+}
+
+.verticalheader{
+background-color: rgb(0, 0, 83);
+padding: 0pc;
+width: 100%;
+height: 5.6pc;
+float: none;
+position: fixed;
+overflow: scroll hidden;
+transition: none;
+border-bottom: 10px solid rgb(0, 0, 83);
+display:flex;
+}
+
+.verticalheader:hover{
+width: 100%;
+background-color: rgb(0, 0, 83);
+border-right: none;
+display:flex;
+}
+
+li a {
+font-size:small;
+font-weight: bold;
+color: black;
+padding: 10px 30px;
+text-decoration: none;
+text-align: center;
+display: flex;
+border-right:0.1px solid black
+}
+
+li > a:hover {
+font-weight: lighter;
+background-color:rgb(0, 0, 83);
+color: turquoise;
+border-right: turquoise;
+}
+
+.chosennav{
+background-color: rgb(0, 0, 83);
+color: turquoise;
+font-weight: lighter;
+border: none;
+border-right: turquoise;
+}
+
+.body {
+border: 2px groove blue;
+padding: 5px;
+width: 92%;
+margin: 31% 2% ;
+font-size: 1pc;
+}
+
+.body::after{
+content:'';
+display:table;
+clear:both;
+
+}
+
+h3{
+  margin: auto;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid darkblue;
+  font-size: 120%;
+  width: 60%;
+  height:fit-content;
+}
+  
+.loginbody {
+  margin: auto;
+  padding: 3px;
+  border: 1px solid rgba(1, 0, 5, 0.8);
+  width: 80%;
+  height: 50%;
+  background-color: rgba(6, 4, 32, 0.8);
+  padding:10% 0% 10% 11%;
+}    
+      
+.loginbody input {
+  position: relative;
+  height: 2pc;
+  width: 65%;
+  margin-right: 0pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}      
+
+h4{
+    width: 60%;
+    margin-right: 15%;
+    margin-left: 20%;
+    margin-top: 3%;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    width: 60%;
+    height:fit-content;
+    border-bottom: 3px groove darkblue;
+}
+
+
+}
+
+</style>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/90ae465085.js" crossorigin="anonymous"></script>
+  <title>www.knzlogin.com</title>
+  <link rel="shortcut icon" href="Kenez.jpg" type="image/x-icon">
+  <script src="kenez.js"></script>
+    <header>
+      <ul class="verticalheader">
+        <li><img src="Kenez.jpg">
+        <li><a href="kenez.html">HOME</a>
+        <li><a href="knzmusic.html">ABOUT US</a>
+        <li class="vtdropdown"><a href="javascript:void(0)" class="vtdropbtn">ALBUMS</a>
+          <div class="vtdropdown-content">
+            <a href="ALBUMZ2023.html">TOP 2023 ALBUMS</a>
+            <a href="ALBUMZ2024.html">TOP 2024 ALBUMS</a>
+          </div>
+        <li><a href="knzvideos.html">VIDEOS</a>
+        <li><a href="knzcharts.html">CHARTS</a></li>
+        <li><a href="knzlogin.html" style="font-weight: bold;background-color: blue;color: black;border: 1px solid blue;">LOG IN</a></li>
+      </ul>
+    </header>
+</head>
+
+<body><br><br><br><br><br><br><br>
+  <div class="loginbody">
+
+      <label for="name">USERNAME</label><br><input type="name" placeholder="username" required>
+      <br><br><br>
+
+      <label for="password">PASSWORD</label> <br>
+      <input type="password" placeholder="**********" required>
+      <br><br>
+
+      <button class="submitbutton" >LOG IN</button>
+      <p style="margin-left: 5%;"><i>forgotten password?</i><a href="knzsignup.html" style="text-decoration: none;color:aqua;">Create Account</a></p>
+
+    </div>
+<br><br><br><br>
+
+  </div>
+
+</body>
+</html>

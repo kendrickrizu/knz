@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: rgb(103, 103, 255);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="kenez.css">
+    <title>kenez.music</title>
+    <link rel="shortcut icon" href="Kenez.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90ae465085.js" crossorigin="anonymous"></script>
+    <html>
+
+    <head>
+        <header>
+            <div class="upperheader">
+                <img id='logo' src="Kenez.jpg">
+                <input type="search" id="searchinput" placeholder="Search...">
+                <button class="searchbtn"><i class="fa-solid fa-search"></i></button>
+            </div>
+            <ul class="lowerheader">
+                <li><a href="kenez.html">HOME</a>
+                <li><a href="knzmusic.html" style="color: turquoise;"><i class="fa fa-book"></i></a>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ALBUMS</a>
+                    <div class="dropdown-content">
+                        <a href="ALBUMZ2023.html">TOP 2023 ALBUMS</a>
+                        <a href="ALBUMZ2024.html">TOP 2024 ALBUMS</a>
+                    </div>
+                <li><a href="knzvideos.html">VIDEOS</a>
+                <li><a href="knzcharts.html">CHARTS</a></li>
+                <li><a href="knzlogin.html">LOG IN</a></li>
+            </ul>
+        </header>
+
+    </head>
+    <br><br><br><br><br><br>
+
+<body>
+
+    <h1 style="background-color: white; width: fit-content;">OUR WORKS</h1><br>
+    <h1 style="background-color: white; width: fit-content;">GP CALCULATOR</h1>
+    <p style="color: red;font-size: small;text-align: center;">*For University/College Students only</p>
+    <div class="tblbtn">
+        <table id="MyTable">
+            <thead>
+                <tr>
+                    <th>CREDIT LOAD</th>
+                    <th>GRADE</th>
+                </tr>
+            </thead>
+            <tbody id="gpBody">
+                <tr>
+                    <td><input id="crInput"  required maxlength="1" type="number"></td>
+                    <td>
+                        <select class="grade">
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1">E</option>
+                            <option value="0">F</option>
+                        </select>
+                    </td>
+                </tr><button id="add" onclick="addCourse()">+</button>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="calcgp">
+        <button id="submit" onclick="calculateGp()">CALCULATE GP</button>
+        <br>
+        <p id="displayGp"></p>
+    </div>
+    <h3><i class="fa fa-comment"></i>REQUESTS:</h3><br>
+    <div class="comments-list" id="comments-list">
+    </div>
+    </div>
+    </div>
+
+
+    <h4>MAKE A REQUESTS</h4>
+    <div style="margin-left: 10%;">
+        <div class="comment-box">
+            <textarea id="comment-input" placeholder="Write your review here..."></textarea><br>
+            <button class="rgstrbtn" onclick="addComment()">SEND</button>
+        </div>
+    </div>
+
+    <footer>
+        <b>CONTACT US</b><br>
+        <div class="fonts">
+            <ul class="footerfonts">
+                <li> <a href="https://www.facebook.com/profile.php?id=61561912972186" target="_blank"
+                        style="color: rgb(201, 199, 199);"><i class="fa fa-facebook"></i></a>
+                <li> <a href="wa.me/09043736437" target="_blank" style="color: rgb(201, 199, 199);"><i
+                            class="fa fa-whatsapp"></i></a>
+                <li> <i class="fa fa-instagram"></i>
+                <li> <i class="fa fa-envelope"></i>
+                <li> <i class="fab fa-x-twitter" id="twitterx"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+
+        function addComment() {
+
+            var commentInput = document.getElementById('comment-input');
+            var commentText = commentInput.value;
+
+            if (commentText.trim() !== "") {
+                var commentList = document.getElementById('comments-list');
+                var newComment = document.createElement('div');
+                newComment.className = 'comment';
+                newComment.textContent = commentText;
+                commentList.appendChild(newComment);
+                commentInput.value = '';
+            } else {
+                alert("Please enter a valid comment.");
+            }
+        }
+
+
+        function addCourse() {
+            var row = document.createElement('tr');
+            row.innerHTML = `<td><input id="crInput" required maxlength="1" type="number"></td>
+    <td>
+       <select class="grade">
+         <option value="5">A</option>
+         <option value="4">B</option>
+         <option value="3">C</option>
+         <option value="2">D</option>
+         <option value="1">E</option>
+         <option value="0">F</option>
+       </select>
+     </td>` ;
+            document.getElementById('gpBody').appendChild(row);
+        }
+
+        function calculateGp() {
+            var rows = document.getElementById('gpBody').children;
+            var totalGp = 0;
+            var totalCr = 0;
+
+            for (let i = 0; i < rows.length; i++) {
+                var crLoad = rows[i].children[0].children[0].value;
+                var grPoint = rows[i].children[1].children[0].value;
+                totalGp += grPoint * crLoad;
+                totalCr += parseInt(crLoad);
+            }
+
+            finalGp = totalGp / totalCr;
+
+            document.getElementById('displayGp').innerHTML = 'TOTAL CREDIT LOAD:' + ' ' + totalCr + '<br>' + 'WEIGHTED SCORE:' + totalGp + '<br>' + 'GP:' + ' ' + finalGp.toFixed(2);
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+
+

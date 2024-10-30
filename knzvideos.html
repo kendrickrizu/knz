@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knzvideos</title>
+    <link rel="stylesheet" href="kenez2.css">
+    <link rel="shortcut icon" href="Kenez.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90ae465085.js" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="upperheader">
+            <img id='logo' src="Kenez.jpg">
+            <input type="search" id="searchinput" placeholder="Search...">
+            <button class="searchbtn"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <ul class="lowerheader">
+            <li><a href="kenez.html">HOME</a>
+            <li><a href="knzmusic.html">ABOUT US</a>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ALBUMS</a>
+                <div class="dropdown-content">
+                    <a href="ALBUMZ2023.html">TOP 2023 ALBUMS</a>
+                    <a href="ALBUMZ2024.html">TOP 2024 ALBUMS</a>
+                </div>
+            <li><a href="knzvideos.html" style="color: turquoise;"><i class="fas fa-film"></i></a>
+            <li><a href="knzcharts.html">CHARTS</a></li>
+            <li><a href="knzlogin.html">LOG IN</a></li>
+        </ul>
+    </header>
+
+</head>
+<br><br><br><br><br>
+
+<div class="vidscontainer">
+<video id="videoplayer" controls autoplay muted>
+    <source src="Kenez.mp4" id="videosource" type="video/mp4">
+</video>
+</div>
+
+<script>
+
+const videos = ["Kenez.mp4", "Mms.mp4","Pieceofmyheart.mp4", "Moving.mp4", "Azaman.mp4", "Timeofmylife.mp4"];
+let currentvideo = 0;
+
+var videoplayer = document.getElementById("videoplayer");
+var videosource = document.getElementById("videosource");
+
+videoplayer.addEventListener('ended', function(){
+    currentvideo++;
+    if (currentvideo >= videos.length) {
+        currentvideo = 0;
+    }
+    videosource.src = videos[currentvideo];
+    videoplayer.load();
+    videoplayer.play();
+});
+
+</script>
+
+
+
+<body>
+ <h1>DOWNLOAD LATEST NIGERIAN MUSIC VIDEOS</h1>
+ <br><br>
+<div class="vidbody">
+
+
+ <div class="leftvidbody">
+        <div class="vidbox">
+        <label for="name"><img src="pieceofmyheart.jfif" alt="">PIECE OF MY HEART <br> <span style="color: blue;font-size: small;">WIZKID, BRENT FAIYAZ</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Wizkid-Ft-Brent-Faiyaz-Piece-Of-My-Heart-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+        <div class="vidbox">
+        <label for="name"><img src="active.jfif" alt="">ACTIVE<br> <span style="color: blue;font-size: small;">ASAKE, TRAVIS SCOTT</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Asake-Ft-Travis-Scott-Active-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/JRF_sdTXpGw?si=vCwVg5ewiPwBXtVx" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+        <div class="vidbox">
+        <label for="name"><img src="azamanvid.jfif" alt="">AZAMAN <br> <span style="color: blue;font-size: small;">REMA</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Rema-Azaman-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/Z2L51xr45As?si=YnLtKbbFgbgUtdyS" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+        <div class="vidbox">
+        <label for="name"><img src="nwokeesike.jfif" alt="">NWOKE ESIKE <br> <span style="color: blue;font-size: small;">PHYNO, HUSHPUPPI</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Phyno-Ft-Hushpuppi-Nwoke-Esike-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/g_bq-Mlwm64?si=BhyfYjBiJ99Kc86r" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+        <div class="vidbox">
+        <label for="name"><img src="backnforth.jfif" >BACK N FORTH <br> <span style="color: blue;font-size: small;">FIREBOY DML, LAGBAJA</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Fireboy-DML-Ft-Lagbaja-back-N-Forth-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/d4yPYbQhook?si=4JnKiRTfSWxOpC7a" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+  </div>
+
+
+  <div class="rightvidbody">
+    <div class="vidbox">
+        <label for="name" title="MR MONEY SOUND"><img src="mmsvid.jfif" alt="">MMS <br> <span style="color: blue;font-size: small;">ASAKE, WIZKID</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Asake-Ft-Wizkid-MMS-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+    <div class="vidbox">
+        <label for="name"><img src="burning.jfif">BURNING <br> <span style="color: blue;font-size: small;">TEMS</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Tems-Burning-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+    <div class="vidbox">
+        <label for="name"><img src="moving.jfif">MOVING <br> <span style="color: blue;font-size: small;">OMAH LAY</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Omah-Lay-Moving-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+   
+    <div class="vidbox">
+        <label for="name"><img src="potofgold.jfif">POT OF GOLD <br> <span style="color: blue;font-size: small;">YOUNG JOHN</span></label>
+        <p class="links"><a href="https://cdn.trendybeatz.com/video/Young-Jonn-Pot-Of-Gold-Video-(TrendyBeatz.com).mp4" class="download" target="_blank"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+    <div class="vidbox">
+        <label for="name"><img src="alone.jfif">ALONE <br> <span style="color: blue;font-size: small;">FOLA, BHADBOI OML</span></label>
+        <p class="links"><a href="javascript:void(0)" onclick="alert('SORRY, THE VIDEO IS UNAVAILABLE FOR DOWNLOAD')" class="download"><i class="fa fa-downloa"></i>DOWNLOAD</a>
+        <a href="https://youtu.be/zr_sTaYTCnU?si=whCZ-_RnSRQedsDg" class="watch" target="_blank">WATCH</a></p>
+    </div>
+
+</div>
+</div>
+<br><br><br>
+<footer>
+    <b>CONTACT US</b><br>
+    <div class="fonts" >
+        <ul class="footerfonts">
+        <li> <a href="https://www.facebook.com/profile.php?id=61561912972186" target="_blank" style="color: rgb(201, 199, 199);"><i class="fa fa-facebook"></i></a> 
+        <li> <a href="wa.me/09043736437" target="_blank" style="color: rgb(201, 199, 199);"><i class="fa fa-whatsapp"></i></a>
+        <li> <i class="fa fa-instagram" ></i>
+        <li> <i class="fa fa-envelope" ></i>
+        <li> <i class="fab fa-x-twitter" id="twitterx" ></i> 
+   </li>
+</ul> 
+</div>
+<ul class="footerlinks">
+    <li>SOURCES: <a href="https://trendybeatz.com/" target="_blank" style="color: aqua;">TRENDYBEATZ</a> and <a href="https://www1.justnaija.com/" target="_blank" style="color: aqua;">JUSTNAIJA</a>
+    <li><a href="mailto:kendrickrizu@gmail.com" target="_blank">SEND US AN EMAIL</a>
+    <li>&copy;2024kenezthedeveloper&trade;
+    </li>
+</ul>
+ </footer> 
+
+</body>
+
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>www.kenezsignup.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="shortcut icon" href="Kenez.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90ae465085.js" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="upperheader">
+            <img id='logo' src="Kenez.jpg">
+            <input type="search" id="searchinput" placeholder="Search...">
+            <button class="searchbtn"><i class="fa-solid fa-search"></i></button>
+        </div>
+             <ul class="lowerheader">
+                <li><a href="kenez.html">HOME</a>
+                <li><a href="knzmusic.html">ABOUT US</a>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ALBUMS</a>
+                <div class="dropdown-content">
+                    <a href="ALBUMZ2023.html">TOP 2023 ALBUMS</a>
+                    <a href="ALBUMZ2024.html">TOP 2024 ALBUMS</a>
+                </div>
+                <li><a href="knzvideos.html">VIDEOS</a>
+                <li><a href="knzcharts.html">CHARTS</a></li>
+                <li><a href="knzlogin.html">LOG IN</a></li>
+             </ul>
+    </header>
+</head>
+<br><br><br><br><br><br><br>
+
+
+<body>
+    <h1 class="signupheader">CREATE AN ACCOUNT</h1><br>
+    <div class="signupbody">
+        <div class="leftsignupbody">
+            
+            <label for="name" class="signuplabel">FIRST NAME</label><br>
+            <input id="fname" type="name" placeholder="firstname">
+            <br><br>
+
+            <label for="name" class="signuplabel">OTHER NAMES</label><br>
+            <input id="othername" type="name" placeholder="other names" >
+            <br>
+            <br>
+
+            <label for="tel" class="signuplabel">PHONE NUMBER</label> <br>
+            <input type="tel" id="tel" maxlength="14" placeholder="+234**********"  >
+            <br>
+            <br>
+
+            <label for="password" class="signuplabel">PASSWORD</label> <br>
+            <input type="password" id="password" placeholder="********"  >
+            <br>
+            <br>
+        </div>
+
+        <div class="leftsignupbody">
+            <label for="name" class="signuplabel">LAST NAME</label><br>
+            <input type="name" id="lname" placeholder="lastname" >
+            <br>
+            <br>
+
+            <label for="email" class="signuplabel">EMAIL ADDRESS</label><br>
+            <input type="email" id="email" placeholder="johndoe@gmail.com" >
+            <br>
+            <br>
+
+            <label for="date" class="signuplabel"> DATE OF BIRTH</label><br>
+            <input type="date"  >
+            <br>
+            <br>
+
+            <label for="password" class="signuplabel">CONFIRM NEW PASSWORD</label><br>
+            <input type="password" id="confrmpassword" placeholder="********"  >
+            <br>
+            <br>
+
+        </div>
+        
+        <br>
+    </div>
+    <button class="displayinfo" onclick="displayinfo()">DISPLAY INFO</button><br><br><br>
+    <p id="displayinfo"></p>
+<br><br>
+    <footer>
+        <b>CONTACT US</b><br>
+        <div class="fonts" >
+            <ul class="footerfonts">
+            <li> <a href="https://www.facebook.com/profile.php?id=61561912972186" target="_blank" style="color: rgb(201, 199, 199);"><i class="fa fa-facebook"></i></a> 
+            <li> <a href="wa.me/09043736437" target="_blank" style="color: rgb(201, 199, 199);"><i class="fa fa-whatsapp"></i></a>
+            <li> <i class="fa fa-instagram" ></i>
+            <li> <i class="fa fa-envelope" ></i>
+            <li> <i class="fab fa-x-twitter" id="twitterx" ></i> 
+       </li>
+    </ul> 
+    </div>
+    <ul class="footerlinks">
+        <li>SOURCES: <a href="https://trendybeatz.com/" target="_blank">TRENDYBEATZ</a> and <a href="https://www1.justnaija.com/" target="_blank" style="color: aqua;">JUSTNAIJA</a>
+        <li><a href="mailto:kendrickrizu@gmail.com" target="_blank">SEND US AN EMAIL</a>
+        <li>&copy;2024kenezthedeveloper&trade;
+        </li>
+    </ul>
+     </footer> 
+
+</body>
+
+</html>
+
+<script>
+    function displayinfo() {
+    var fname = document.getElementById("fname").value;
+    var othername = document.getElementById("othername").value;
+    var lname = document.getElementById("lname").value;
+    var tel = document.getElementById("tel").value;
+    var fullname =  lname + ' ' + fname + ' ' + othername ;
+
+    document.getElementById("displayinfo").innerHTML = "NAME : " + fullname.toUpperCase() + '<br>' + "PHONE NUMBER : " + tel;
+    }
+</script>
+
+
+<style>
+
+  body {
+  margin: 0px;
+  background-image: url('ALBUMZ2023.png');
+  background-size: cover;
+  }
+  
+  header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  }
+  
+  .upperheader{
+  background-color: rgb(0, 0, 83);
+  margin: 0%;
+  }
+
+  #logo {
+  height: 3pc;
+  width: 4pc;
+  margin-left: 5pc;
+  margin-right: 14pc;
+  float: left;
+  }
+  
+  #searchinput {
+  position: relative;
+  height: 2pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  margin-top: 1pc;
+  width: 5.4pc;
+  transition: width 1s ease-in-out;
+  }
+  
+  #searchinput:focus{
+  width: 22pc;
+  }
+  
+  .searchbtn{
+  color: blue;
+  background-color: black;
+  border: 3px solid blue;
+  margin-left: 0px;
+  height: 2pc;
+  border-radius: 6px;
+  }
+  
+  .lowerheader {
+  background-color: black;
+  margin: 0px;
+  height: 2pc;
+  }
+  
+  .lowerheader li {
+  display: inline;
+  color: rgb(0, 0, 83);
+  text-align: center;
+  padding: 0.4pc 4.1pc;
+  font-size: large;
+  }
+  
+  li > a:hover {
+  color: turquoise;
+  }
+  
+  li > a:focus {
+  color: turquoise;
+  }
+
+  .dropdown:hover .dropbtn {
+  color: turquoise;
+  }
+  
+  li.dropdown {
+  display: inline-block;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  }
+  
+  .dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+  a {
+  text-decoration: none;
+  margin: 0px;
+  color: blue;
+  }
+  
+  .signupheader {
+  border: 2px solid black;
+  background-color: black;
+  color: blue;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px darkblue;
+  }
+  
+  .signupbody{
+  display: flex;
+  gap: 4pc;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .leftsignupbody{
+    float: left;
+  }
+
+  .signuplabel{
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  background-color: black;
+  border: 1px solid blue;
+  padding: 2px;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: blue;
+  color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;
+  font-weight: bold;
+  }
+  
+  input {
+  position: relative;
+  height: 2pc;
+  width: 15pc;
+  margin: 0pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  input:hover {
+  background-color: whitesmoke;
+  }
+  
+  input:focus {
+  background-color:rgb(197, 226, 250);
+  border: 2px solid darkblue;
+  }
+  
+  p {
+  color: darkblue;
+  font-weight: bold;
+  font-size: large;
+  }
+  
+  span {
+  color: black;
+  font-family: sans-serif;
+  }
+  
+footer{
+    background-color: rgba(0, 0, 0, 0.91);
+    margin: 0pc;
+    height: 18pc;
+    width: 100%;
+}
+
+footer li{
+    padding: 5%;
+    border-right: 1px solid  rgb(201, 199, 199);
+    border-style: groove ;
+}
+
+footer b{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: darkblue;
+    border-bottom: 1px solid blue;
+    font-size: 2pc;
+}
+
+footer .fonts, footer .footerfonts {
+    font-size: 1.8pc;
+    color: rgb(201, 199, 199);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerfonts li{
+    padding: 3pc;
+    border-right: 1px solid  rgb(201, 199, 199);
+    border-style: groove ;
+}
+
+li .fa-facebook:hover{
+ color: blue;
+ font-size: 1.9pc;
+}
+
+li .fa-whatsapp:hover{
+   font-size: 1.9pc;
+   color: green;
+   }
+
+   li .fa-instagram:hover{
+    color: rgb(103, 103, 255);
+    font-size: 1.9pc;
+   }
+
+   li .fa-x-twitter:hover{
+    color: blue;
+    font-size: 1.9pc;
+   }
+
+   li .fa-envelope:hover{
+   color: brown;
+   font-size: 1.9pc;
+   }
+
+.footerlinks{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: blue;
+}
+
+.footerlinks li{
+    padding: 0px 4%;
+}
+
+.source{
+    color: aqua;
+}
+  
+.displayinfo{
+    width: fit-content;
+    font-weight: bold;
+    padding: 7px;
+    margin-left: 45%;
+    color: blue;
+    background-color: black;
+    border: 2px groove black;
+}
+  
+#displayinfo{
+ margin: auto;
+ text-align: center;
+ background-color: rgb(162, 233, 209);
+ color: black;
+ border: 3px groove blue;
+ width: fit-content;
+ padding: 2px;
+}
+
+@media screen and (max-width: 1275px) {
+ .lowerheader li {
+  padding: 0.5pc 2.7%;
+  }
+  
+body {
+  margin: 0px;
+  background-color: rgb(197, 226, 250);
+}  
+
+ #logo {
+  height: 2.9pc;
+  width: 3.3pc;
+  margin-left: 4%;
+  margin-right: 9%;
+  float: left;
+  }
+
+  #searchinput {
+  position: relative;
+  height: 1.8pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  margin-top: 1pc;
+  width: 5.4pc;
+  transition: width 1s ease-in-out;
+  }
+  
+  #searchinput:focus{
+  width: 35%;
+  }
+
+}
+
+@media screen and (max-width: 701px) {
+
+body {
+  margin: 0px;
+  background-color: rgb(197, 226, 250);
+}  
+
+header {
+  position: fixed;
+  margin: 0px;
+  width: 100%;
+  z-index : 2;
+  }
+  
+  .upperheader{
+  background-color: rgb(0, 0, 83);
+  margin: 0px;
+  }
+  
+  .lowerheader {
+  background-color: black;
+  margin: 0px;
+  height: 2pc; 
+  }
+  
+  .lowerheader li {
+  display: inline;
+  color: rgb(0, 0, 83);
+  text-align: center;
+  float: none;
+  padding: 0.5pc 0.9%;
+  border-right:1px solid rgb(0, 0, 83);
+  font-size: 66%;
+  font-weight: bold;
+  }
+  
+  #logo {
+  height: 2.9pc;
+  width: 3.3pc;
+  margin-left: 4%;
+  margin-right: 5%;
+  float: left;
+  }
+
+  #searchinput {
+  position: relative;
+  height: 1.8pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  margin-top: 1pc;
+  width: 5.4pc;
+  transition: width 1s ease-in-out;
+  }
+  
+  #searchinput:focus{
+  width: 55%;
+  }
+  
+  .searchbtn{
+  color: blue;
+  background-color: black;
+  border: 2px solid blue;
+  margin-left: 0px;
+  height: 2pc;
+  border-radius: 6px;
+  }
+
+  li > a:hover {
+  color: turquoise;
+  }
+  
+  li > a:focus {
+  color: turquoise;
+  }
+
+  .dropdown:hover .dropbtn {
+  color: turquoise;
+  }
+  
+  li.dropdown {
+  display: inline-block;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  }
+  
+  .dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+  a {
+  text-decoration: none;
+  margin: 0px;
+  color: blue;
+  }
+  
+  .signupheader {
+  border: 2px solid black;
+  background-color: black;
+  color: blue;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  font-size: 130%;
+  box-shadow: 2px 2px 2px 2px black;
+  }
+  
+  .signupbody{
+  display: block;
+  gap: 0pc;
+  justify-content: center;
+  align-items: center;
+  }
+  
+   .leftsignupbody{
+    margin-left: 15%;
+    float: none;
+  
+  }
+
+  .signuplabel{
+  color: blue;
+  font-size: small;
+  font-weight: bold;
+  background-color: black;
+  border: 1px solid blue;
+  padding: 2px;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: blue;
+  color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;
+  font-weight: bold;
+  }
+  
+  
+  .signupbody > input {
+  position: relative;
+  height: 2pc;
+  width: 10pc;
+  padding-left: 1pc;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: light;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  input:hover {
+  background-color: whitesmoke;
+  }
+  
+  input:focus {
+  background-color:rgb(197, 226, 250);
+  border: 2px solid darkblue;
+  }
+  
+  p {
+  color: darkblue;
+  font-weight: bold;
+  font-size: large;
+  }
+  
+  span {
+  color: black;
+  font-family: sans-serif;
+  }
+  
+  footer{
+    background-color: black;
+    margin: 0pc;
+    height: 18pc;
+    width: 100%;
+}
+
+footer li{
+    padding: 5%;
+    border-right: 1px solid  rgb(201, 199, 199);
+    border-style: groove ;
+}
+
+footer b{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: darkblue;
+    border-bottom: 1px solid blue;
+    font-size: 1.5pc;
+}
+
+footer .fonts, footer .footerfonts {
+    font-size: 120%;
+    color: rgb(201, 199, 199);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerfonts li{
+    padding: 1pc;
+    border-right: 1px solid  rgb(201, 199, 199);
+    border-style: groove ;
+}
+
+li .fa-facebook:hover{
+ color: blue;
+ font-size: 121%;
+}
+
+li .fa-whatsapp:hover{
+   color: green;
+   font-size: 121%;
+   }
+
+   li .fa-instagram:hover{
+    color: rgb(103, 103, 255);
+    font-size: 121%;
+   }
+
+   li .fa-x-twitter:hover{
+    color: blue;
+    font-size: 121%;
+   }
+
+   li .fa-envelope:hover{
+   color: brown;
+   font-size: 121%;
+   }
+
+.footerlinks{
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    justify-content: center;
+    color: blue;
+}
+
+.footerlinks li{
+    padding: 0px;
+    margin: 2.5%;
+    font-size: 80%;
+    border: none;
+}
+
+.source{
+    color: aqua;
+    font-size: 20%;
+}
+
+  p {
+  color: black;
+  }
+  
+  #submit {
+  background-color: black;
+  border: 1px solid black;
+  color: blue;
+  font-weight: bolder;
+  }
+
+  }
+  </style>

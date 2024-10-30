@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background-color: beige;
+    }
+</style>
+
+<head>
+    <title>www.kenezcharts.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="kenez.css">
+    <link rel="shortcut icon" href="Kenez.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90ae465085.js" crossorigin="anonymous"></script>
+
+    <header>
+        <div class="upperheader">
+            <img id='logo' src="Kenez.jpg">
+            <input type="search" id="searchinput" placeholder="Search...">
+            <button class="searchbtn"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <ul class="lowerheader">
+            <li><a href="kenez.html">HOME</a>
+            <li><a href="knzmusic.html">ABOUT US</a>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ALBUMS</a>
+                <div class="dropdown-content">
+                    <a href="ALBUMZ2023.html">TOP 2023 ALBUMS</a>
+                    <a href="ALBUMZ2024.html">TOP 2024 ALBUMS</a>
+                </div>
+            <li><a href="knzvideos.html">VIDEOS</a>
+            <li><a href="knzcharts" style="color: turquoise;"><b><i class="fas fa-chart-line"></i></b></a></li>
+            <li><a href="knzlogin.html">LOG IN</a></li>
+        </ul>
+    </header>
+</head>
+<br>
+
+<body>
+
+    <div class="chartdiv">
+        <h2><i class="fa fa-spotify">&nbsp;SPOTIFY DAILY CHARTS</i></h2>
+        <iframe src="https://kworb.net/spotify/country/ng_daily.html#google_vignette" frameborder="2"></iframe>
+    </div>
+
+    <div class="chartdiv">
+        <h2><i class="fa fa-apple">&nbsp; APPLE MUSIC DAILY CHARTS</i></h2>
+        <iframe src="https://kworb.net/charts/apple_s/ng.html#google_vignette" frameborder="2"></iframe>
+    </div>
+
+    <div class="chartdiv">
+        <h2><i class="fa fa-music">&nbsp; OFFICIAL NIGERIA TURNTABLE CHARTS</i></h2>
+        <iframe src="https://www.turntablecharts.com/Charts/Top50" frameborder="2"></iframe>
+    </div><br><br>
+
+    <h1 style="width: fit-content;">OTHER CHARTS</h1>
+    <p class="othercharts"
+        style="display: flex; text-align: center;font-size: 1.5pc;justify-content: center;align-self: center;">
+        <a href="https://www.boomplay.com/playlists/850210"><img src="boomplay.jpeg" width="40" height="40"
+                title="BOOMPLAY"></a> &nbsp;&nbsp;&nbsp;
+        <a href="https://audiomack.com/geo-charts/playlist/nigeria"><img src="audiomack.jpeg" width="40" height="40"
+                style="border-radius: 50%;" title="AUDIOMACK"></a>
+    </p>
+
+    <h3 style="width: 60%;margin-right: 15%;margin-left: 20%">LEAVE A REVIEW ABOUT OUR PAGE</h1>
+        <div style="margin-left: 10%;">
+            <div class="comment-box">
+                <textarea id="comment-input" placeholder="Write your review here..."></textarea><br>
+                <button class="rgstrbtn" onclick="addComment()">SEND</button>
+            </div>
+
+            <h3><i class="fa fa-comment"></i>REVIEWS:</h3><br>
+            <div class="comments-list" id="comments-list">
+            </div>
+        </div><br><br><br>
+
+        <footer>
+            <b>CONTACT US</b><br>
+            <div class="fonts">
+                <ul class="footerfonts">
+                    <li> <a href="https://www.facebook.com/profile.php?id=61561912972186" target="_blank"
+                            style="color: rgb(201, 199, 199);"><i class="fa fa-facebook"></i></a>
+                    <li> <a href="wa.me/09043736437" target="_blank" style="color: rgb(201, 199, 199);"><i
+                                class="fa fa-whatsapp"></i></a>
+                    <li> <i class="fa fa-instagram"></i>
+                    <li> <i class="fa fa-envelope"></i>
+                    <li> <i class="fab fa-x-twitter" id="twitterx"></i>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footerlinks">
+                <li>SOURCES: <a href="https://trendybeatz.com/" target="_blank" style="color: aqua;">TRENDYBEATZ</a> and
+                    <a href="https://www1.justnaija.com/" target="_blank" style="color: aqua;">JUSTNAIJA</a>
+                <li><a href="mailto:kendrickrizu@gmail.com" target="_blank">SEND US AN EMAIL</a>
+                <li>&copy;2024kenezthedeveloper&trade;
+                </li>
+            </ul>
+        </footer>
+</body>
+
+</html>
+
+
+<style>
+    footer b {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        color: darkblue;
+        border-bottom: 1px solid blue;
+        font-size: 2pc;
+    }
+
+    footer .fonts,
+    footer .footerfonts {
+        font-size: 1.8pc;
+        color: rgb(201, 199, 199);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .footerfonts li {
+        padding: 3pc;
+        border-right: 1px solid rgb(201, 199, 199);
+        border-style: groove;
+    }
+
+    li .fa-facebook:hover {
+        color: blue;
+        font-size: 1.9pc;
+    }
+
+    li .fa-whatsapp:hover {
+        font-size: 1.9pc;
+        color: green;
+    }
+
+    li .fa-instagram:hover {
+        color: rgb(103, 103, 255);
+        font-size: 1.9pc;
+    }
+
+    li .fa-x-twitter:hover {
+        color: blue;
+        font-size: 1.9pc;
+    }
+
+    li .fa-envelope:hover {
+        color: brown;
+        font-size: 1.9pc;
+    }
+
+    footer {
+        background-color: black;
+        margin: 0pc;
+        height: 17pc;
+        width: 100%;
+    }
+
+    .footerlinks {
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        margin: auto;
+        margin-left: 20%;
+        color: blue;
+    }
+
+    .footerlinks li {
+        padding: 0px 2pc;
+    }
+
+    .source {
+        color: aqua;
+    }
+</style>
+
+<script>
+    function addComment() {
+        var commentInput = document.getElementById('comment-input');
+        var commentText = commentInput.value;
+
+        if (commentText.trim() !== "") {
+            var commentList = document.getElementById('comments-list');
+            var newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.textContent = commentText;
+            commentList.appendChild(newComment);
+            commentInput.value = '';
+        } else {
+            alert("Please enter a valid comment.");
+        }
+    }
+</script>
+
+</body>
+
+</html>
